@@ -1,0 +1,51 @@
+button.navbar-button {
+  padding: 0;
+  margin: 10px;
+  background-color: white;
+  border:none;
+}
+body {
+  margin: 0;
+  display: flex;
+}
+.navbar-button-container {
+  display:flex;
+  flex-direction: column;
+  width: 220px;
+}
+#root  {
+  display:flex;
+  flex-grow: 1;
+}
+.d-flex {
+  display: flex !important;
+}
+.task-summary-card {
+  display: flex;
+  justify-content: space-between;
+}
+.line-through {
+  text-decoration: line-through dashed;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.todoist-root-wrapper {
+  max-height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.tasks-list-wrapper {
+  max-height: 95vh;
+  overflow-y: scroll;
+  padding: 0px 40px 0px 0px;
+}
+.today-tasks-summary {
+  width: 80%;
+}
