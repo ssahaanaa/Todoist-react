@@ -1,0 +1,298 @@
+button.navbar-button {
+  padding: 0;
+  margin: 10px;
+  background-color: white;
+  border:none;
+}
+:root {
+  --color-papper: #F3F5F7;
+  --color-surface: #FFFFFF;
+  --color-ink: #16202E;
+  --color-muted: #647084;
+  --color-line: #DFE4EA;
+  --color-accent: #1F6F5C;
+  --color-accent-mid: #DCECE7;
+  --color-accent-soft: #E3F1EC;
+  --color-priority-high: #C8432B;
+  --color-priority-medium: #B7791F;
+  --color-priority-low: #4F7396;
+  --color-scim: #16202E;
+}
+// Modal dialog configurations
+.input-field-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.modal-dialog-title-actions {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-line);
+  padding-left: 24px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-top: 18px;
+}
+.modal-dialog {
+  &.medium {
+    min-height: 480px;
+    width: 520px;
+  }
+}
+.modal-dialog-body {
+  padding-left: 22px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+// Svg icons
+.icon {
+  height: 16px;
+  width: 16px;
+  &.icon-sm {
+    height: 20px;
+    width: 20px;
+  }
+}
+// Mixins
+@mixin fontSansSemiBold() {
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+body {
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  font-family: var(--font-sans);
+}
+.navbar-button-container {
+  display:flex;
+  flex-direction: column;
+  width: 220px;
+}
+#root  {
+  display:flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.d-flex {
+  display: flex !important;
+}
+.flex-column {
+  flex-direction: column;
+}
+.d-block {
+  display: block !important;
+}
+.w-100 {
+  min-width: 230px !important;
+}
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important
+}
+.fs-14px {
+  font-size: 14px;
+}
+.fs-13px {
+  font-size: 13px;
+}
+.position-relative {
+  position: relative;
+}
+.task-summary-card {
+  display: flex;
+  justify-content: space-between;
+}
+.line-through {
+  text-decoration: line-through dashed;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.todoist-root-wrapper {
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.tasks-list-wrapper {
+  max-height: 95vh;
+  overflow-y: scroll;
+  padding: 0px 40px 0px 0px;
+}
+.today-tasks-summary {
+  width: 80%;
+}
+dialog::backdrop {
+  background-color: black;
+  opacity: 0.7;
+}
+.task-creation-option {
+  background-color: white;
+  border: 1px solid black;
+}
+dialog .content {
+  background: white;
+  width: 30%;
+  margin: 5% auto;
+  border-radius: 15px;
+}
+dialog.modal {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  opacity: 0.7;
+  overflow-y: scroll;
+}
+.footer-actions {
+  text-align: center;
+  padding: 10px 24px 24px 0px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.input-field {
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  height: 35px;
+  padding: 12px 10px;
+  margin-bottom: 16px;
+}
+.input-textarea {
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 10px;
+  margin-bottom: 16px;
+}
+.icon.close-option {
+  fill: var(--color-muted);
+}
+
+// Aligning two fields in col-6 col-6 proportion with flex
+.flex-container-wrapper {
+  display: flex;
+  gap: 14px;
+  .flex-container-child-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+  }
+}
+
+// buttons 
+.btn-default {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 9px 14px;
+  border: 1px solid var(--color-line);
+  cursor: pointer;
+  &.accent {
+    background-color: var(--color-accent);
+    color: white;
+  }
+}
+
+.multiselect-dropdown, .dropdown-trigger {
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid var(--color-line);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  width: 100%;
+  .no-option-avail {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    &:hover {
+      color: white;
+      background-color: var(--color-accent);
+    }
+  }
+  .multiselect-option, .dropdown-option {
+    padding: 5px;
+    cursor: pointer;
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    input:hover, label:hover {
+      cursor: pointer;
+    }
+    &.selected {
+      background-color: var(--color-accent-mid);
+    }
+    &:hover {
+      background-color: var(--color-accent);
+      color: white;
+      border-radius: 5px;
+    }
+  }
+}
+.multi-select-selected-options {
+  cursor: pointer;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  padding: 5px;
+  height: 35px;
+  overflow-y: scroll;
+  .selected-option {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+  }
+}
+.no-option-selected {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+// Top Band
+.top-band {
+  border: 1px solid var(--color-line);
+  border-top: none;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .add-task-top-band {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 10px;
+    background-color: var(--color-accent);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .search-container {
+    display: flex;
+    align-items: stretch;
+    background-color: var(--color-papper);
+    min-width: 390px;
+    min-height: 35px;
+    border-radius: 8px;
+    input {
+      width: 100%;
+      outline: none;
+      &::placeholder {
+        color: var(--color-muted);
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+    .icon {
+      margin: auto 10px;
+    }
+  }
+}
