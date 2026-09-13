@@ -1,0 +1,124 @@
+<svg
+  width="240"
+  height="200"
+  viewBox="0 0 240 200"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Soft background circle -->
+  <circle
+    cx="120"
+    cy="98"
+    r="72"
+    fill="#F8F8F8"
+  />
+
+  <!-- Clipboard -->
+  <rect
+    x="72"
+    y="48"
+    width="96"
+    height="116"
+    rx="12"
+    fill="white"
+    stroke="#D9D9D9"
+    stroke-width="2"
+  />
+
+  <!-- Clipboard top -->
+  <rect
+    x="96"
+    y="39"
+    width="48"
+    height="22"
+    rx="8"
+    fill="white"
+    stroke="#D9D9D9"
+    stroke-width="2"
+  />
+
+  <rect
+    x="107"
+    y="45"
+    width="26"
+    height="6"
+    rx="3"
+    fill="#E5484D"
+  />
+
+  <!-- Task row 1 -->
+  <rect
+    x="88"
+    y="77"
+    width="15"
+    height="15"
+    rx="4"
+    fill="white"
+    stroke="#CFCFCF"
+    stroke-width="2"
+  />
+
+  <line
+    x1="113"
+    y1="84.5"
+    x2="151"
+    y2="84.5"
+    stroke="#D7D7D7"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+  <!-- Task row 2 -->
+  <rect
+    x="88"
+    y="103"
+    width="15"
+    height="15"
+    rx="4"
+    fill="white"
+    stroke="#CFCFCF"
+    stroke-width="2"
+  />
+
+  <line
+    x1="113"
+    y1="110.5"
+    x2="145"
+    y2="110.5"
+    stroke="#E0E0E0"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+  <!-- Task row 3 -->
+  <rect
+    x="88"
+    y="129"
+    width="15"
+    height="15"
+    rx="4"
+    fill="white"
+    stroke="#CFCFCF"
+    stroke-width="2"
+  />
+
+  <line
+    x1="113"
+    y1="136.5"
+    x2="153"
+    y2="136.5"
+    stroke="#E7E7E7"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+  <!-- Decorative sparkle -->
+  <path
+    d="M178 67L181 75L189 78L181 81L178 89L175 81L167 78L175 75L178 67Z"
+    fill="#E5484D"
+  />
+
+  <!-- Small decorative dots -->
+  <circle cx="61" cy="116" r="4" fill="#E9E9E9" />
+  <circle cx="181" cy="118" r="3" fill="#E9E9E9" />
+</svg>
